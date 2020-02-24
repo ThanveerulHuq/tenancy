@@ -14,7 +14,7 @@ export class AppComponent {
     tokenEndpoint:'https://oauth2.googleapis.com/token',
     redirectUri: window.location.origin ,
     strictDiscoveryDocumentValidation:false,
-    clientId: '${{ secrets.GOOGLE_CLIENT_ID }}',
+    clientId: process.env.GOOGLE_CLIENT_ID,
     scope: 'openid profile email',
   }
 
