@@ -14,7 +14,7 @@ export class AppComponent {
     tokenEndpoint:'https://oauth2.googleapis.com/token',
     redirectUri: window.location.origin ,
     strictDiscoveryDocumentValidation:false,
-    clientId: process.env.GOOGLE_CLIENT_ID,
+    clientId: '874676337946-i80mu672enl003jfsaf7ctfajcr06vpj.apps.googleusercontent.com',
     scope: 'openid profile email',
   }
 
@@ -25,9 +25,6 @@ export class AppComponent {
 
   constructor(private oauthService: OAuthService) {
     this.oauthService.configure(this.authConfig);
-    // if(!this.oauthService.get){
-    //   this.oauthService.initImplicitFlow();
-    // }
     this.oauthService.tokenValidationHandler = new NullValidationHandler();
     this.oauthService.loadDiscoveryDocumentAndTryLogin().then(res=>{
       if(!res) this.oauthService.initImplicitFlow();

@@ -1,0 +1,51 @@
+<div class="basic-details-card">
+
+  <mat-card class="main-card">
+    <mat-card-header class="card-header">
+      <mat-card-title >Basic Details</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="basic-form">
+      <p>
+        <mat-form-field appearance="outline" class="form-field" MatFormFieldControl>
+          <mat-label>Name</mat-label>
+          <input matInput placeholder="Placeholder">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="form-field" MatFormFieldControl>
+          <mat-label>Contact Number</mat-label>
+          <input matInput placeholder="Placeholder" type="number">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="form-field" MatFormFieldControl>
+          <mat-label>Standard</mat-label>
+          <mat-select>
+            <mat-option value="option">X</mat-option>
+            <mat-option value="option">XII</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="form-field" MatFormFieldControl>
+          <mat-label>School</mat-label>
+          <mat-select>
+            <mat-option value="option">St.Pauls</mat-option>
+            <mat-option value="option">Velammal</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline" class="form-field" MatFormFieldControl>
+          <mat-label>Email ID</mat-label>
+          <input matInput placeholder="Placeholder"  type="email">
+        </mat-form-field>
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="card-actions">
+      <button mat-raised-button color="basic">Clear</button>
+      <button mat-raised-button (click)="submitBasicDetails()" color="primary">Next</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

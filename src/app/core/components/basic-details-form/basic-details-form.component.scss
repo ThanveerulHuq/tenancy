@@ -1,0 +1,32 @@
+.basic-details-card {
+  display: flex;
+  justify-content: center;
+}
+
+.main-card {
+  width: 40em;
+  margin-top: 1em;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.basic-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.form-field{
+  width: 25em ;
+}
