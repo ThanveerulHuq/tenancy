@@ -18,6 +18,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MainNavigationComponent } from './core/components/main-navigation/main-navigation.component';
 import { BasicDetailsFormComponent } from './core/components/basic-details-form/basic-details-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire'
+import { AngularFirestoreModule } from '@angular/fire/firestore'
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     HttpClientModule,
     OAuthModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,

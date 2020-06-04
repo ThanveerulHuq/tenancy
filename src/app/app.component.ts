@@ -19,16 +19,16 @@ export class AppComponent {
   }
 
 
-  title = 'angular-boiler-plate';
+  title = 'tenancy';
 
 
 
   constructor(private oauthService: OAuthService) {
-    this.oauthService.configure(this.authConfig);
-    this.oauthService.tokenValidationHandler = new NullValidationHandler();
-    this.oauthService.loadDiscoveryDocumentAndTryLogin().then(res=>{
-      if(!res) this.oauthService.initImplicitFlow();
-    })
+    // this.oauthService.configure(this.authConfig);
+    // this.oauthService.tokenValidationHandler = new NullValidationHandler();
+    // this.oauthService.loadDiscoveryDocumentAndTryLogin().then(res=>{
+    //   if(!res) this.oauthService.initImplicitFlow();
+    // });
 
   }
 

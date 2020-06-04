@@ -1,6 +1,6 @@
 {
-  "name": "angular-boiler-plate",
-  "short_name": "angular-boiler-plate",
+  "name": "tenancy",
+  "short_name": "tenancy",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
