@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "~9.0.2",
     "@angular/router": "~9.0.2",
     "@angular/service-worker": "~9.0.2",
-    "angular-oauth2-oidc": "^8.0.4",
+    "angular-oauth2-oidc": "^17.0.1",
     "firebase": "^7.14.6",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
